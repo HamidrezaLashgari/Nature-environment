@@ -1,0 +1,436 @@
+* {
+  font-family: 'Vazir-FD';
+}
+
+@font-face {
+  font-family: 'Vazir-FD';
+  src: url('./assets/fonts/Vazir-Regular-FD.woff');
+}
+
+body {
+  margin: 0;
+}
+
+.wallpaper {
+  height: 99vh;
+  width: 100%;
+  background: url('./assets/wallpaper/e05744161d7500a183d5ec3a38a6e626.jpg')
+    center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  order: -1;
+}
+
+.svg {
+  margin-top: 390px;
+  margin-bottom: 3rem;
+  order: 1;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.menu-item {
+  margin-right: 1rem;
+}
+
+.menu-items {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem 1rem;
+  margin: 0 0;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-nav {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2b9b6f;
+  direction: rtl;
+}
+
+.solution-container {
+  margin-top: 5rem;
+  background: rgb(1, 144, 150);
+  background: linear-gradient(
+    166deg,
+    rgba(1, 144, 150, 1) 21%,
+    rgba(43, 155, 111, 1) 46%,
+    rgba(97, 169, 62, 1) 100%
+  );
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.soloution-title {
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 2rem;
+}
+
+.hr {
+  width: 50%;
+  color: rgba(1, 144, 150, 1);
+}
+
+/* 
+Scroll button
+*/
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #2b9b6f;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+/* scroll button end */
+
+.solution-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.solution-content__text {
+  text-align: center;
+  width: 40%;
+  direction: rtl;
+}
+
+.clearly-world {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0rem 0 6rem 0;
+}
+
+.earth-title {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+}
+
+.earth-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-clearly-earth {
+  text-align: center;
+  direction: rtl;
+  width: 40%;
+}
+
+.slider {
+  width: 56%;
+  border: 1px solid #2b9b6f;
+  border-radius: 5px;
+}
+
+.lightboxmoadl {
+  box-sizing: border-box;
+}
+
+/* modal setting start  */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* modal setting end */
+
+.lightboxmoadl {
+  background: rgb(1, 144, 150);
+  background: linear-gradient(
+    313deg,
+    rgba(1, 144, 150, 1) 21%,
+    rgba(43, 155, 111, 1) 46%,
+    rgba(97, 169, 62, 1) 100%
+  );
+  height: 580px;
+}
+
+.lightboxtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.modallihtbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 4rem 0 0 314px;
+}
+
+.aboutwedo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.what-we-do__text {
+  width: 70%;
+  direction: rtl;
+}
+
+.what-we-can-do-that {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  direction: rtl;
+}
+
+.what-we-do-title {
+  font-size: 1.6rem;
+  padding: 2rem 0 0 0rem;
+}
+
+.what-we-can-do-title {
+  font-size: 1.6rem;
+  padding: 2rem 0 0 0;
+}
+
+.main-footer-img {
+  background: rgb(1, 144, 150);
+  background: linear-gradient(
+    183deg,
+    rgba(1, 144, 150, 1) 21%,
+    rgba(43, 155, 111, 1) 46%,
+    rgba(97, 169, 62, 1) 100%
+  );
+  height: 500px;
+}
