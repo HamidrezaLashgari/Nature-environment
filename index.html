@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Multi media Project</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <div class="wallpaper">
-      <header class="main-header">
-        <div class="logo">logo</div>
-        <nav class="main-nav">
-          <ul class="menu-item">
-            <li class="menu-items"><a href="#">ارتباط با ما</a></li>
-            <li class="menu-items"><a href="#">درباره ما</a></li>
-            <li class="menu-items"><a href="#">راه‌ حل</a></li>
-            <li class="menu-items"><a href="#">صفحه اصلی</a></li>
-          </ul>
-        </nav>
-        <a href="#solution">
-          <svg class="arrows">
-            <path class="a1" d="M0 0 L30 32 L60 0"></path>
-            <path class="a2" d="M0 20 L30 52 L60 20"></path>
-            <path class="a3" d="M0 40 L30 72 L60 40"></path>
-          </svg>
-        </a>
-      </header>
-
-      <div class="svg">
-        <div class="header-text">
-          بیاید و از آسیب زدن به محیط زیست با تفکیک زباله ها جلوگیری کنیم.
+    <header class="main-header">
+      <div class="header-wallpaper">
+        <div class="navbar">
+          <div class="logo"><a href="#"><i class="fas fa-recycle"></i></a></div>
+          <div class="menu">
+            <ul class="menu-items" id="whitetitle">
+              <li class="menu-item"><a href="#">صفحه اصلی</a></li>
+              <li class="menu-item"><a href="#">راه حل ها</a></li>
+              <li class="menu-item"><a href="#">پست ها</a></li>
+              <li class="menu-item"><a href="#">درباره ما</a></li>
+            </ul>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,128L40,144C80,160,160,192,240,218.7C320,245,400,267,480,282.7C560,299,640,309,720,309.3C800,309,880,299,960,288C1040,277,1120,267,1200,245.3C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-          ></path>
-        </svg>
+
+        <div class="dropdown">
+          <a href="#solution">
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="svg">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#ffffff"
+              fill-opacity="1"
+              d="M0,128L40,144C80,160,160,192,240,218.7C320,245,400,267,480,282.7C560,299,640,309,720,309.3C800,309,880,299,960,288C1040,277,1120,267,1200,245.3C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+            ></path>
+          </svg> -->
+          <img src="./assets/icon/wave.svg" alt="wave">
+        </div>
+        
       </div>
-    </div>
+    </header>
     <main>
-      <section class="solution-container" id="solution">
-        <div class="soloution-title">چکیده ای از راه حل ها</div>
+      <section class="section-1">
+      <div class="solution" id="solution">
+        <div class="title" id="whitetitle">چکیده ای از راه حل ها</div>
+        
         <hr class="hr" />
-        <img
-          src="./assets/icon/PicsArt_06-06-06.19.40.png"
-          alt="icon"
-          class="energy-icon"
-        />
+
+        <div class="energyimg">
+          <img src="./assets/icon/PicsArt_06-06-06.19.40.png" alt="image" />
+        </div>
+
         <hr class="hr" />
-        <div class="solution-content">
-          <div class="solution-content__text">
+        <div class="soluton-content">
+          <p class="solution-content__text" id="text-content">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
@@ -64,145 +71,25 @@
             راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
             حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
             طراحی اساسا مورد استفاده قرار گیرد.
-          </div>
+          </p>
+
           <div class="solution-content__picture">
             <img
               src="./assets/icon/PicsArt_06-06-06.28.31.png"
-              alt="wallpaper"
+              alt="solution-content"
             />
           </div>
         </div>
-      </section>
-      <section class="clearly-world">
-        <div class="earth-title">زمین تمیز</div>
-        <hr class="hr" />
-        <div class="earth-container">
-          <div class="earth-wallpaper">
-            <img
-              src="./assets/icon/PicsArt_06-06-06.52.38.png"
-              alt="wallpaper"
-            />
-          </div>
-          <div class="about-clearly-earth">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
-            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
-            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-            متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان
-            رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
-            کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-            راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
-            حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
-            طراحی اساسا مورد استفاده قرار گیرد.
-          </div>
-        </div>
-      </section>
-      <section class="lightboxmoadl">
-        <h2 class="lightboxtitle">تصاویر رفتگران طبیعت</h2>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="clean-world">
+        <p class="title">زمین تمیز</p>
+
         <hr class="hr" />
 
-        <div class="modallihtbox">
-          <div class="row">
-            <div class="column">
-              <img
-                src="./assets/wallpaper/1.png"
-                style="width: 100%"
-                onclick="openModal();currentSlide(1)"
-                class="hover-shadow cursor"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="./assets/wallpaper/2.png"
-                style="width: 100%"
-                onclick="openModal();currentSlide(2)"
-                class="hover-shadow cursor"
-              />
-            </div>
-            <div class="column">
-              <img
-                src="./assets/wallpaper/3.png"
-                style="width: 100%"
-                onclick="openModal();currentSlide(3)"
-                class="hover-shadow cursor"
-              />
-            </div>
-          </div>
-
-          <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-              <div class="mySlides">
-                <div class="numbertext">1 / 4</div>
-                <img src="./assets/wallpaper/1.png" style="width: 100%" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">2 / 4</div>
-                <img src="./assets/wallpaper/2.png" style="width: 100%" />
-              </div>
-
-              <div class="mySlides">
-                <div class="numbertext">3 / 4</div>
-                <img src="./assets/wallpaper/3.png" style="width: 100%" />
-              </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-              <div class="caption-container">
-                <p id="caption"></p>
-              </div>
-
-              <div class="column">
-                <img
-                  class="demo cursor"
-                  src="./assets/wallpaper/1.png"
-                  style="width: 100%"
-                  onclick="currentSlide(1)"
-                  alt="پاکسازی بوستان ملت"
-                />
-              </div>
-              <div class="column">
-                <img
-                  class="demo cursor"
-                  src="./assets/wallpaper/2.png"
-                  style="width: 100%"
-                  onclick="currentSlide(2)"
-                  alt="پاکسازی رودخانه درکه"
-                />
-              </div>
-              <div class="column">
-                <img
-                  class="demo cursor"
-                  src="./assets/wallpaper/3.png"
-                  style="width: 100%"
-                  onclick="currentSlide(3)"
-                  alt="پاکسازی و جمع آوری فیلتر سیگار در بوستان لاله"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="aboutwedo">
-        <div class="what-we-do">
-          <p class="what-we-do-title">هدف ما از این وبلاگ</p>
-          <hr class="hr" />
-          <div class="what-we-do__text">
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز،
-            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
-            زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
-            متخصصان را می طلبد
-          </div>
-        </div>
-        <p class="what-we-can-do-title">کاری که میتونیم انجام بدیم</p>
-        <hr style="width: 40%" />
-
-        <div class="what-we-can-do-that">
+        <p class="clean-world__text" id="text-content">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
@@ -214,20 +101,103 @@
           شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
           اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
           قرار گیرد.
-          <div class="icon-we-do">
-            <img src="./assets/icon/PicsArt_06-06-08.18.14.png" alt="" />
+        </p>
+        <div class="clean-world__picture">
+          <img src="./assets/icon/PicsArt_06-06-06.52.38.png" alt="wallpaper" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="light-box-modal">
+        <p class="title" id="whitetitle">تصاویر رفتگران طبیعت</p>
+        <hr class="hr" />
+        
+        <div class="row">
+          <div class="column">
+            <img src="./assets/wallpaper/1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+        
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="./assets/wallpaper/1.png" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="./assets/wallpaper/2.png" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="./assets/wallpaper/3.png" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="./assets/wallpaper/1.png" style="width:100%" onclick="currentSlide(1)" alt="پاکسازی بوستان ملت">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./assets/wallpaper/2.png" style="width:100%" onclick="currentSlide(2)" alt="پاکسازی رودخانه درکه">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="./assets/wallpaper/3.png" style="width:100%" onclick="currentSlide(3)" alt="پاکسازی و جمع آوری فیلتر سیگار در بوستان لاله">
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <footer class="main-footer-img">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fill-opacity="1"
-            d="M0,192L120,160C240,128,480,64,720,53.3C960,43,1200,85,1320,106.7L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
-          ></path>
-        </svg>
-      </footer>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="our-plan">
+        <p class="title">هدف ما از این وبلاک</p>
+
+        <hr class="hr" />
+
+        <div class="our-plan__text" id="text-content">
+          <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد </p>
+        </div>
+
+        <div class="what-we-can-do">
+          <p class="title">کاری که میتونیم انجام بدیم</p>
+          <hr class="hr" />
+
+          <p class="what-we-can-do__text" id="text-content">
+
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد 
+          </p>
+          <div class="what-we-can-do__img">
+          <img src="./assets/icon/PicsArt_06-06-08.18.14.png" alt="wallpaper">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="svg"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L120,160C240,128,480,64,720,53.3C960,43,1200,85,1320,106.7L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+        ></path>
+      </svg>
+      <ul class="end-footer">
+        <li class="footer-item" id="whitetitle">Designed by TMKR</li>
+      </ul>
+    </footer>
     </main>
     <script src="./app.js"></script>
   </body>
